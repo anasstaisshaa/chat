@@ -17,10 +17,9 @@ public class Client {
     private final ExecutorService pool = Executors.newFixedThreadPool(2);
     private Boolean stopped = false;
     public final String CLIENT_MESSAGE_FIELD_TEMPLATE =
-//            "You are [%s]. Enter your message (use 1 to change name or 8 to quit or 9 to stop server): ";
             "Enter your message (use 1 to change name or 8 to quit): ";
 
-    public /*synchronized*/ void go() throws IOException {
+    public void go() throws IOException {
         InetAddress inetAddress = Inet4Address.getByName("localhost");
         System.out.printf("Connecting to %s:%s%n", inetAddress, PORT);
         System.out.print("Select your name: ");
