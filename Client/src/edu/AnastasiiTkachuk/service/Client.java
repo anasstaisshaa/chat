@@ -40,16 +40,7 @@ public class Client {
             pool.submit(io);
             pool.submit(nio);
 
-//            io.start();
-//            nio.start();
-
             while (!stopped) {
-//                io.control(stopped);
-//                nio.control(stopped);
-
-
-                    //System.out.println("Finish your input!");
-                    //System.out.println("Waiting for network.");
                     Thread.sleep(2000);
 
 

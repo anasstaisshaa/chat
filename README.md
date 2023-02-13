@@ -32,5 +32,5 @@ To run several clients it is necessary
 2. To start this file with the command (navigate to the proper folder first)
 
         cd out\artifacts\chat_client
-        java -cp chat.jar edu.AnastasiiTkachuk.ClientRunner
+        java -cp Client.jar edu.AnastasiiTkachuk.ClientRunner
 

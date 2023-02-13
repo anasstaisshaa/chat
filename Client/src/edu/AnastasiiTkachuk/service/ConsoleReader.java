@@ -49,7 +49,6 @@ public class ConsoleReader implements Runnable{
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
-                    //System.out.printf("Sent to server: %s%n", message);
                 }
             }
         }

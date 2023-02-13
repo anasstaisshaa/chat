@@ -26,9 +26,7 @@ public class NetworkReader implements Runnable {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-//            System.out.printf("%nResponse from server: %s%n", dataNio);
             System.out.printf("%n%s%n", dataNio);
-//            System.out.println();
             System.out.printf(CLIENT_MESSAGE_FIELD_TEMPLATE);
         }
     }
