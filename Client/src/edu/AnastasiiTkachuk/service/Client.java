@@ -41,8 +41,6 @@ public class Client {
 
             while (!stopped) {
                     Thread.sleep(2000);
-
-
             }
         } catch (InterruptedException e) {
             throw new RuntimeException(e);

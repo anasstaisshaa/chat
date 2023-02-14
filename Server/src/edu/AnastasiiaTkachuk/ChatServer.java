@@ -55,6 +55,8 @@ public class ChatServer {
 
             while (!request.contains("Stop server request")) {
                 System.out.println("Client's request: " + request);
+                int activeCount = Thread.activeCount();
+                System.out.printf("Active threads = %s", activeCount);
                 List<Task> taskList = new ArrayList<>();
                 taskList.add(new Task(request, clientDataOutputStreams));
                 try {
